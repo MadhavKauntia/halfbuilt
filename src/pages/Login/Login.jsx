@@ -2,7 +2,12 @@ import React from "react";
 import "./login.css";
 import github from "../../assets/github.png";
 
-const Login = () => {
+const Login = (props) => {
+  // temp function
+  const setIsLoggedIn = () => {
+    props.setLoggedIn(true);
+  };
+
   return (
     <div className="halfbuilt__login section__padding">
       <div className="halfbuilt__login-container">
@@ -15,7 +20,7 @@ const Login = () => {
             leetcode alternative to dev projects; saepe odio voluptas<br></br>
             voluptatum quia qui adipisci repellat repellendus natus.
           </p>
-          <img src={github} alt="github" />
+          <img src={github} alt="github" onClick={setIsLoggedIn} />
         </div>
       </div>
       <div className="halfbuilt__login-footer">
