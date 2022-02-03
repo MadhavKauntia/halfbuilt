@@ -1,0 +1,126 @@
+.halfbuilt__login {
+  background-image: url("../../assets/background.png");
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.halfbuilt__login-container__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(41px);
+  padding: 8rem 12rem;
+}
+
+.halfbuilt__login-container__content h1 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 39px;
+  line-height: 58px;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.purple {
+  color: var(--color-purple);
+}
+
+.halfbuilt__login-container__content p {
+  font-family: var(--font-family);
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #6b7280;
+  margin-top: 1rem;
+}
+
+.halfbuilt__login-container__content img {
+  width: 356px;
+  height: 65px;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.halfbuilt__login-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 1rem;
+}
+
+.halfbuilt__login-footer p {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+  .halfbuilt__login-container__content {
+    padding: 5rem 3rem;
+  }
+
+  .halfbuilt__login-footer {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .halfbuilt__login-container__content img {
+    width: 250px;
+    height: 45px;
+    margin-top: 2rem;
+  }
+
+  .halfbuilt__login-container__content p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 1rem;
+  }
+
+  .halfbuilt__login-container__content p br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .halfbuilt__login-container__content {
+    padding: 4rem 1rem;
+  }
+
+  .halfbuilt__login-container__content img {
+    width: 200px;
+    height: 36px;
+    margin-top: 1rem;
+  }
+
+  .halfbuilt__login-container__content p {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #6b7280;
+    margin-top: 0.5rem;
+  }
+
+  .halfbuilt__login-container__content p br {
+    display: none;
+  }
+}
