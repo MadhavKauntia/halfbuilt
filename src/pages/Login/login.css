@@ -4,7 +4,7 @@
   min-width: 100%;
   min-height: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: right;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,6 +72,12 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1160px) {
+  .halfbuilt__login-container__content p br {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .halfbuilt__login-container__content {
     padding: 5rem 3rem;
@@ -94,10 +100,6 @@
     line-height: 20px;
     margin-top: 1rem;
   }
-
-  .halfbuilt__login-container__content p br {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 400px) {
@@ -118,9 +120,5 @@
     text-align: center;
     color: #6b7280;
     margin-top: 0.5rem;
-  }
-
-  .halfbuilt__login-container__content p br {
-    display: none;
   }
 }
